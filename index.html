@@ -304,10 +304,10 @@ window.onresize = function() {
 		fuckyou();
 }
 </script>
-<!--禁止右键查看-->
+<!--禁止右键查看
     <script type="text/Javascript">
     document.oncontextmenu=function(e){return   false;};
-    </script>
+    </script>-->
 	<!--百度自动提交-->
 	<script>
 (function(){
@@ -327,6 +327,11 @@ window.onresize = function() {
 	 
 	<!--固定背景图片：background-attachment:fixed;-->
 	<body style="background-color: #FFFFFF !important;background-attachment:fixed;">
+		
+		<!--使“另存为”命令不能顺利执行-->
+		＜noscript＞ 
+		＜iframe scr="*.htm"＞＜/iframe＞ 
+		＜/noscript＞
 	
 	<div id="access">
 		<!--头部-->

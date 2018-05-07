@@ -331,8 +331,10 @@ window.onresize = function() {
 })();
 </script>
 	
-	
-
+	<script>
+	var s=Math.random()*10; 
+    document.getElementById("checkCodeImg").innerHTML="<img src='/checkcode.jsp?rnd="+s+"'/>";
+</script>
 	 
 	<!--固定背景图片：background-attachment:fixed;-->
 	<body style="background-color: #FFFFFF !important;background-attachment:fixed;">

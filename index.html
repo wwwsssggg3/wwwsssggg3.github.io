@@ -430,13 +430,31 @@ window.onresize = function() {
 							<!--新页面播放按钮end-->
 							<!--<input type="button" onclick="ss()" style="height: 32px; width: 60px;vertical-align: top;cursor:pointer;" value="" />
 							-->
+							<!--展开隐藏教程-->
+							<p class="flip"><button type="button">点击教程</button></p>
+							<!--展开隐藏教程end-->
 						</td>
 					</tr>
 				</form>&nbsp;
 				
 				
 				
-				
+				<!--展开隐藏教程-->
+				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+				<script> 
+				$(document).ready(function(){
+				$(".flip").click(function(){
+				$(".panel").toggle();
+				});
+				});
+				</script>
+				<p class="flip"><button type="button">点击教程</button></p>
+				<div class="panel" style="display: none;">
+					<img src="jc1.PNG"/>
+					<img src="jc2.PNG"/>
+					<img src="sj.PNG"/>
+				</div>
+				<!--展开隐藏教程end-->
 				
 				
 				
@@ -461,22 +479,7 @@ window.onresize = function() {
 				<br/><br/>
 				
 				
-				<!--展开隐藏教程-->
-				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-				<script> 
-				$(document).ready(function(){
-				$(".flip").click(function(){
-				$(".panel").toggle();
-				});
-				});
-				</script>
-				<p class="flip"><button type="button">点击教程</button></p>
-				<div class="panel" style="display: none;">
-					<img src="jc1.PNG"/>
-					<img src="jc2.PNG"/>
-					<img src="sj.PNG"/>
-				</div>
-				<!--展开隐藏教程end-->
+				
 				
 				
 				

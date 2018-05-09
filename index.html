@@ -463,23 +463,16 @@ window.onresize = function() {
 				
 				<!--展开隐藏教程-->
 				<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-				<script type="text/javascript">
+				<script> 
 				$(document).ready(function(){
-				  $("#hide").click(function(){
-				  $("p").hide();
-				  });
-				  $("#show").click(function(){
-				  $("p").show();
-				  });
+				$(".flip").click(function(){
+				$(".panel").toggle();
+				});
 				});
 				</script>
-				</head>
-				<body>
-				<p id="p1">
-					<img src="jc1.PNG"/><img src="jc2.PNG"/><br/><img src="sj.PNG"/>	
-				</p>
-				<button id="hide" type="button">隐藏</button>
-				<button id="show" type="button">查看教程</button>
+				<p class="flip">点击这里，隐藏/显示面板</p>
+				<div class="panel" style="display: none;"><p>一寸光阴一寸金，因此，我们为您提供快捷易懂的学习内容。</p>
+				<p>在这里，您可以通过一种易懂的便利的模式获得您需要的任何知识。</p></div>
 				<!--展开隐藏教程end-->
 				
 				

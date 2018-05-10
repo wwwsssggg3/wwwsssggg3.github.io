@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		遍历json数组，循环插入option到select中。
+		<script type="text/javascript" src="http://www.w3school.com.cn/jquery/jquery.js"></script>
+		<select id="select1"></select>
+		<script type="text/javascript">
+		    var jsonData = { 'blogs': ['dudu', 'Artech', 'Fish Li'] };
+		    $.each(jsonData.blogs, function (index, val) {
+		        $("#select1").append("<option value='" + index + "'>" + val + "</option>");
+		    });
+		</script>
+	</body>
+</html>

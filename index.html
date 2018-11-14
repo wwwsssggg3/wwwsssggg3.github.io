@@ -77,7 +77,11 @@
 				if(id == null) {
 					var selectContent = $('#func-table').bootstrapTable('getSelections'); //获取选中行数据
 					if(typeof(selectContent[0]) == 'undefined') {
-						alert("请先勾选要操作的行!");
+						$.alert({
+							title: '提示消息',
+							content: '请添加选要操作的行!',
+							theme: 'material'
+						});
 						return false;
 					} else {
 						var b = JSON.stringify(selectContent);
